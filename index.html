@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelleGlow Up | L'éclat naturel de votre peau</title>
+    <meta name="description"
+        content="Découvrez les scrubs artisanaux CelleGlow Up. Des produits 100% naturels pour une peau éclatante et nourrie. Brille, Inspire, Attire.">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>CelleGlow</h1>
+                <span>Up</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#philosophy">Philosophie</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-action">
+                <a href="https://wa.me/2290167393856" class="btn btn-outline" style="padding: 10px 20px;">Commander</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 id="hero-title">Laisse ton éclat briller</h2>
+                <p id="hero-desc">Des gommages corporels artisanaux 100% naturels, conçus pour révéler la puissance de
+                    votre beauté intérieure.</p>
+                <div class="hero-cta" id="hero-cta">
+                    <a href="#products" class="btn btn-primary">Découvrir la gamme</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image" id="hero-img"
+            style="background-image: url('cell1.png'); background-size: cover; background-position: center;">
+        </div>
+        <div class="hero-badge" id="hero-badge">
+            <p>"Let your power shine"</p>
+        </div>
+    </section>
+
+    <!-- Philosophy -->
+    <section id="philosophy" class="philosophy">
+        <div class="container">
+            <div class="section-head reveal">
+                <span>Notre Essence</span>
+                <h2>Une approche artisanale unique</h2>
+            </div>
+            <div class="philosophy-grid">
+                <div class="p-card reveal">
+                    <div class="icon-placeholder">
+                        <i data-lucide="sparkles"></i>
+                    </div>
+                    <h3>Fait Main</h3>
+                    <p>Chaque pot est préparé avec soin et attention par Chancelle, garantissant une qualité
+                        exceptionnelle.</p>
+                </div>
+                <div class="p-card reveal" style="transition-delay: 0.2s;">
+                    <div class="icon-placeholder">
+                        <i data-lucide="leaf"></i>
+                    </div>
+                    <h3>100% Naturel</h3>
+                    <p>Des ingrédients bruts et purs, sans additifs chimiques, pour respecter votre équilibre cutané.
+                    </p>
+                </div>
+                <div class="p-card reveal" style="transition-delay: 0.4s;">
+                    <div class="icon-placeholder">
+                        <i data-lucide="heart"></i>
+                    </div>
+                    <h3>Avec Amour</h3>
+                    <p>Une passion pour le bien-être qui se ressent dès la première application sur votre peau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-head reveal">
+                <span>La Collection Glow</span>
+                <h2>Sublimez votre rituel beauté</h2>
+            </div>
+            <div class="product-grid">
+                <!-- Coffee Scrub -->
+                <div class="product-card reveal">
+                    <div class="product-img">
+                        <img src="coffee_scrub_real.png" alt="Glow Scrub Café">
+                    </div>
+                    <div class="product-tag">Énergie & Exfoliation</div>
+                    <h3>Glow Scrub — Café</h3>
+                    <p>Un gommage tonifiant au café pour stimuler la circulation et affiner le grain de peau.</p>
+                    <a href="https://wa.me/2290167393856?text=Bonjour, je souhaite commander le Glow Scrub Café"
+                        class="btn btn-outline">Réserver</a>
+                </div>
+                <!-- Honey Scrub -->
+                <div class="product-card reveal" style="transition-delay: 0.2s;">
+                    <div class="product-img">
+                        <img src="honey_scrub_real.png" alt="Glow Scrub Miel">
+                    </div>
+                    <div class="product-tag">Douceur & Nutrition</div>
+                    <h3>Glow Scrub — Miel</h3>
+                    <p>Une infusion de douceur pour nourrir en profondeur et laisser un voile satiné irrésistible.</p>
+                    <a href="https://wa.me/2290167393856?text=Bonjour, je souhaite commander le Glow Scrub Miel"
+                        class="btn btn-outline">Réserver</a>
+                </div>
+                <!-- Charcoal Scrub -->
+                <div class="product-card reveal" style="transition-delay: 0.4s;">
+                    <div class="product-img">
+                        <img src="cell.png" alt="Glow Scrub Charbon">
+                    </div>
+                    <div class="product-tag">Purification & Éclat</div>
+                    <h3>Glow Scrub — Charbon</h3>
+                    <p>Détoxifiez votre peau avec la puissance du charbon actif pour un teint pur et lumineux.</p>
+                    <a href="https://wa.me/2290167393856?text=Bonjour, je souhaite commander le Glow Scrub Charbon"
+                        class="btn btn-outline">Réserver</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial reveal">
+        <div class="container">
+            <blockquote>"Le secret d'une confiance qui rayonne commence par une peau dont on prend soin."</blockquote>
+            <cite>Chancelle — Fondatrice de CelleGlow Up</cite>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-flex">
+                <div class="contact-info reveal">
+                    <span>Contact</span>
+                    <h2>Prête à rayonner ?</h2>
+                    <p>Pour toute commande ou demande d'information, contactez-moi directement via mes réseaux sociaux
+                        ou WhatsApp.</p>
+                    <div class="social-links">
+                        <a href="https://wa.me/2290167393856" class="social-btn" title="WhatsApp">
+                            <i data-lucide="phone"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vicella__/" class="social-btn" title="Instagram">
+                            <i data-lucide="instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/chancellevictoirealm" class="social-btn" title="Facebook">
+                            <i data-lucide="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-action reveal" style="transition-delay: 0.3s;">
+                    <a href="https://wa.me/2290167393856" class="btn btn-primary"
+                        style="padding: 30px 60px; font-size: 1.2rem;">Discuter sur WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <div class="logo">
+                    <h1>CelleGlow</h1>
+                    <span>Up</span>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2026 CelleGlow Up. Brille · Inspire · Attire.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+</body>
+
+</html>
