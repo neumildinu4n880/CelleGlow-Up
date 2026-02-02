@@ -383,7 +383,19 @@ nav .container {
 .product-card p {
     font-size: 0.9rem;
     color: var(--text-muted);
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-family: var(--font-heading);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
     margin-bottom: 25px;
+}
+
+.buy-now {
+    width: 100%;
 }
 
 /* --- Testimonial --- */

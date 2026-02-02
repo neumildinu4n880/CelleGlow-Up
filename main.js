@@ -57,3 +57,31 @@ window.addEventListener('scroll', () => {
         heroImg.style.backgroundPositionY = `calc(50% + ${depth}px)`;
     }
 });
+
+// Kkiapay Integration
+const buyButtons = document.querySelectorAll('.buy-now');
+
+buyButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const amount = button.getAttribute('data-amount');
+        const item = button.getAttribute('data-item');
+        const description = button.getAttribute('data-description');
+
+        openKkiapayWidget({
+            amount: parseInt(amount),
+            position: "right",
+            callback: "https://votre-site.com/success", // À mettre à jour
+            data: item,
+            theme: "#c9956a", // Votre couleur or
+            key: "c546e8c8928766863777553b47bf504ce8e75bb3", // Clé test (Kkiapay Sandbox)
+            sandbox: true // Garder true pour les tests
+        });
+    });
+});
+
+// Listener pour le succès du paiement (optionnel mais recommandé)
+addKkiapayListener('success', (response) => {
+    console.log('Paiement réussi:', response);
+    alert('Merci pour votre commande ! Nous vous contacterons sous peu.');
+});
+
