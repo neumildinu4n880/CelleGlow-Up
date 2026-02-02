@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap');
 
 :root {
-    /* Color Palette */
-    --primary-gold: #c9956a;
-    --light-gold: #e2c4a0;
-    --dark-gold: #a06b3c;
-    --cream-bg: #faf5ef;
-    --cream-darker: #f0e8df;
-    --text-dark: #3b2f2f;
-    --text-muted: #6b5b5b;
+    /* Color Palette - Updated to Light Yellow / Gold Branding */
+    --primary-gold: #d4a76a;
+    --light-gold: #f0d58e;
+    --dark-gold: #b38b4d;
+    --cream-bg: #fdfaf0;
+    --cream-darker: #f5f0e1;
+    --text-dark: #4a3b2b;
+    --text-muted: #7a6b5b;
     --white: #ffffff;
 
     /* Typography */

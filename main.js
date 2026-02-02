@@ -18,10 +18,10 @@ gsap.registerPlugin(ScrollTrigger);
 const tl = gsap.timeline({ defaults: { ease: "power4.out" } });
 
 tl.to("#hero-title", { opacity: 1, y: 0, duration: 1.2, delay: 0.5 })
-  .to("#hero-desc", { opacity: 1, y: 0, duration: 1.2 }, "-=0.8")
-  .to("#hero-cta", { opacity: 1, y: 0, duration: 1.2 }, "-=0.8")
-  .to("#hero-img", { opacity: 1, x: 0, duration: 1.5, ease: "power2.out" }, "-=1.5")
-  .to("#hero-badge", { opacity: 1, scale: 1, rotate: -5, duration: 1, ease: "back.out(1.7)" }, "-=0.5");
+    .to("#hero-desc", { opacity: 1, y: 0, duration: 1.2 }, "-=0.8")
+    .to("#hero-cta", { opacity: 1, y: 0, duration: 1.2 }, "-=0.8")
+    .to("#hero-img", { opacity: 1, x: 0, duration: 1.5, ease: "power2.out" }, "-=1.5")
+    .to("#hero-badge", { opacity: 1, scale: 1, rotate: -5, duration: 1, ease: "back.out(1.7)" }, "-=0.5");
 
 // Reveal animations on scroll
 const reveals = document.querySelectorAll('.reveal');
@@ -70,11 +70,12 @@ buyButtons.forEach(button => {
         openKkiapayWidget({
             amount: parseInt(amount),
             position: "right",
-            callback: "https://votre-site.com/success", // À mettre à jour
+            callback: "",
             data: item,
-            theme: "#c9956a", // Votre couleur or
-            key: "c546e8c8928766863777553b47bf504ce8e75bb3", // Clé test (Kkiapay Sandbox)
-            sandbox: true // Garder true pour les tests
+            theme: "#d4a76a",
+            // REMPLACEZ LA CLÉ CI-DESSOUS PAR LA CLÉ PUBLIQUE DE LA CLIENTE
+            key: "pk_test_xxxxxxxxxxxxxxxxxxxxxxxx",
+            sandbox: true
         });
     });
 });
